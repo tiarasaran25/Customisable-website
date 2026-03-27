@@ -372,3 +372,133 @@ A customisable website for mobile application
     @include responsive-font($font-size-xl, $font-size-2xl, $font-size-3xl);
   }
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiara Beauty Brand</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Tiara Beauty!</h1>
+    </header>
+    <main>
+        <p>Here you can find the best beauty products tailored just for you.</p>
+    </main>
+    <footer>
+        <p>&copy; 2026 Tiara Beauty Brand. All rights reserved.</p>
+    </footer>
+</body>
+</html>#!/bin/bash
+
+# Deploy script for Tiara Beauty Brand
+
+# Build the application
+echo "Building the application..."
+# Add your build commands here
+
+# Deploy the application
+echo "Deploying the application..."
+# Add your deployment commands here
+from flask import Flask, request
+
+app = Flask(__name__)
+
+@app.route('/webhook', methods=['POST'])
+def webhook():
+    data = request.json
+    # Handle the received data
+    print(data)
+    return '', 200
+
+if __name__ == '__main__':
+    app.run(port=5000)[Unit]
+Description=Tiara Webhook Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /path/to/webhook-receiver.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.targetserver {
+    listen 80;
+    server_name your_domain.com;
+
+    location / {
+        proxy_pass http://localhost:5000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+}# DEPLOYMENT.md
+
+## Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/tiarasaran25/tiara-website.git
+   cd tiara-websitepython3 -m venv venv
+source venv/bin/activatepip install -r requirements.txtsudo systemctl start tiara-webhook.servicesudo journalctl -u tiara-webhook.serviceTiara Beauty Brand - Official Website# Clone your new repository
+git clone https://github.com/tiarasaran25/tiara-website.git
+cd tiara-website
+
+# Copy your files into the folder
+# - tiara.html
+# - deploy.sh
+# - webhook-receiver.py
+# - tiara-webhook.service
+# - tiara-nginx.conf
+# - DEPLOYMENT.md
+
+# Push to GitHub
+git add .
+git commit -m "Initial commit: Tiara website and deployment files"
+git push origin main<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Beauty Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>This is the home section of the beauty website.</p>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Learn more about our beauty services.</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Makeup</li>
+                <li>Skincare</li>
+                <li>Hair Styling</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email us at: info@beautywebsite.com</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Beauty Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>https://github.com/tiarasaran25/Customisable-website.git
